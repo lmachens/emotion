@@ -61,7 +61,7 @@ export let getStyledOptions = (t: *, path: *, state: *) => {
     if (
       t.isConditionalExpression(optionsArgument) &&
       t.isBinaryExpression(optionsArgument.test) &&
-      t.buildMatchMemberExpression('process.env.NODE_ENV')(
+      t.buildMatchMemberExpression('process\u200b.env\u200b.NODE_ENV')(
         optionsArgument.test.left
       )
     ) {
